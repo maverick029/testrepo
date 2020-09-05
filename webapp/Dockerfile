@@ -7,6 +7,6 @@ RUN apt-get install openjdk-8-jdk -y
 RUN mkdir /home/nodejsinstall && mkdir /home/pipinstall
 #COPY nodesource_setup.sh /home/nodejsinstall
 #RUN cd home/nodejsinstall && bash nodesource_setup.sh && apt-get install nodejs -y
-RUN cd home/pipinstall && apt-get install python3.6 -y && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py
+//RUN cd home/pipinstall && apt-get install python3.6 -y && curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python get-pip.py
 RUN mkdir /home/codefiles
 CMD ["/bin/bash"]
